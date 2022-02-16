@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p>Password Generator</p>
+        <input type="checkbox" id="requireCapitals" name="requireCapitals" value="Capitals">
+        <label for="requireCapitals">Include capital letters</label><br>
+        <input type="checkbox" id="requireNumbers" name="requireNumbers" value="Numbers">
+        <label for="requireNumbers">Include numbers</label><br>
+        <input type="checkbox" id="requireSpecials" name="requireSpecials" value="Specials">
+        <label for="requireSpecials">Include special characters</label><br>
+        <input type="checkbox" id="requireRealWords" name="requireRealWords" value="RealWords">
+        <label for="requireRealWords">Make password from real words</label><br>
+        <script type="module" src="index.js"></script>
+        <p>Number of characters required:</p>
+        <input type="text" placeholder="Characters..." id="inputNumberOfCharacters" class="inputClass">
+        <p></p>
+        <p id = "instructionsText"></p>
+        <button type="createPassword" id="createPassword" onclick="">Create Password!</button>
+        <p id = "password"></p>
+    </body>
+</html>
